@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --color-vscode-bg: #1e1e1e;
+  --color-vscode-sidebar: #252526;
+  --color-vscode-tab-active: #1e1e1e;
+  --color-vscode-tab-inactive: #2d2d2d;
+  --color-vscode-text: #d4d4d4;
+  --color-vscode-keyword: #569cd6;
+  --color-vscode-string: #ce9178;
+  --color-vscode-comment: #6a9955;
+  --color-vscode-activity-bar: #333333;
+  --color-vscode-status-bar: #007acc;
+  --color-vscode-tag: #569cd6;
+  --color-vscode-attr: #9cdcfe;
+  --color-vscode-value: #ce9178;
+  --color-vscode-json-key: #9cdcfe;
+  --color-vscode-json-string: #ce9178;
+  --color-vscode-json-number: #b5cea8;
+  --color-vscode-line-number: #858585;
+}
+
+:root {
+  --background: 220 20% 4%;
+  --foreground: 210 40% 98%;
+  --border: 215 27.9% 16.9%;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.code-font {
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+}
+
+.token-keyword { color: var(--color-vscode-keyword); }
+.token-string { color: var(--color-vscode-string); }
+.token-comment { color: var(--color-vscode-comment); }
+.token-tag { color: var(--color-vscode-tag); }
+.token-attr { color: var(--color-vscode-attr); }
+.token-value { color: var(--color-vscode-value); }
+.token-json-key { color: var(--color-vscode-json-key); }
+.token-json-string { color: var(--color-vscode-json-string); }
+.token-json-number { color: var(--color-vscode-json-number); }
+.token-line-number { color: var(--color-vscode-line-number); user-select: none; }
